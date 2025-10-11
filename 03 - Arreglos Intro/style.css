@@ -1,0 +1,128 @@
+* {
+    font-family: 'Play', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+/* Titulo */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+/* Seccion de busqueda */
+.search-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+/* Input de busqueda */
+input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+input[type="text"]:focus {
+    border-color: #3498db;
+}
+
+/* Boton */
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Seccion de resultados */
+.resultados {
+    margin-top: 20px;
+}
+
+/* Lista de alumnos */
+#listaAlumnos {
+    list-style: none;
+    padding: 0;
+}
+
+/* Items de la lista */
+#listaAlumnos li {
+    background: #f9f9f9;
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #eee;
+}
+
+#listaAlumnos li:hover {
+    background: #e9ecef;
+}
+
+/* Nombres en negrita */
+#listaAlumnos li strong {
+    display: block;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+/* Matricula */
+#listaAlumnos li span {
+    color: #666;
+    font-size: 14px;
+}
+
+/* Mensaje cuando no hay resultados */
+.no-results {
+    text-align: center;
+    color: #6c757d;
+    font-style: italic;
+    padding: 20px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    
+    .container {
+        padding: 20px;
+    }
+    
+    .search-section {
+        flex-direction: column;
+    }
+    
+    input[type="text"] {
+        margin-bottom: 10px;
+    }
+}
+
+

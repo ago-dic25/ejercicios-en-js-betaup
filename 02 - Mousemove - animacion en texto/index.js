@@ -43,3 +43,5 @@ hero.addEventListener('mousemove', function(e){
   //  ${desplazaY * 0.5}px ${-desplazaX * 0.5}px 10px rgba(255, 20, 147, 0.6)
   //`;
 });
+
+
